@@ -32,6 +32,7 @@ struct SceneKitView: UIViewRepresentable {
             
             playAnimationKeys(for: scene.rootNode)
             view.scene = scene
+            view.scene?.isPaused = false
             
         } else {
             print("Failed to load the scene.")
